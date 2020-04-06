@@ -1,0 +1,69 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(#050c33, black);
+}
+
+h1 {
+  text-shadow: 0 0 15px;
+}
+
+h2 {
+  text-shadow: 0 0 10px;
+  animation-name: neon;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes neon {
+  0% {text-shadow: 0 0 10px;}
+  50% {text-shadow: 0 0 35px;}
+  100% {text-shadow: 0 0 11px;}
+}
+
+
+h3 {
+  color: #ffe4b530;
+  font-size: 2em;
+  animation-name: glow;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+
+#nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  width: 150px;
+  height: 70px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: moccasin;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px moccasin;
+  text-align: center;
+  transition-property: box-shadow;
+  transition-duration: 1.2s;
+}
+
+
+.nav-item:hover {
+  box-shadow: inset 0 0 20px moccasin;
+}
+
+
+@keyframes glow {
+  0% {color: #ffe4b530;}
+  50% {color: #ffe4b5;}
+  100% {color: #ffe4b530;}
+}

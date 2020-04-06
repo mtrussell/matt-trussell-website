@@ -1,0 +1,18 @@
+matttrussell.com
+
+css-tricks.com for inspiration
+i love their: 
+-link hover
+-comment section link underline
+-::selection
+-top nav on hover
+-sweet gradient on everything
+-styled custom scrollbar
+
+
+
+color names page
+-list of names in black and white
+-when you hover over them you see the word change to its color
+-when you click it the name becomes white and the background becomes the color
+-when you click a color it adds the name to a 'selected' list at the top of the page

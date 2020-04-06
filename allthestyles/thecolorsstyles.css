@@ -1,0 +1,697 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Main Layout Elements */
+
+#header {
+  padding-top: 25vh;
+  height: 100vh;
+}
+
+#colors-list {
+  margin-bottom: 25vh;
+}
+
+#picked-colors {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  cursor: pointer;
+}
+
+/* Header */
+
+h1 {
+  font-size: 6.5em;
+  text-shadow: 0 0 10px orange;
+}
+
+h2 {
+  font-size: 4.5em;
+  text-shadow: 0 0 15px dodgerblue;
+}
+
+
+/* Top and Bottom Buttons */
+
+#scroll-buttons {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-button {
+  display: none;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 2em;
+  color: ghostwhite;
+  background-color: darkslategray;
+  height: 2em;
+  width: 2em;
+  margin-top: 5px;
+}
+
+
+#top-button:hover {
+  background-color: crimson;
+}
+
+#bottom-button:hover {
+  background-color: chocolate;
+}
+
+#mypicks-button:hover {
+  background-color: cadetblue;
+}
+
+/* The Nav */
+
+h5 {
+  color: seagreen;
+  font-size: 2em;
+  animation-name: glow;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+#nav {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  width: 150px;
+  height: 70px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: dodgerblue;
+  border-radius: 20px;
+  box-shadow: 0 0 10px dodgerblue;
+  text-align: center;
+  transition-property: box-shadow;
+  transition-duration: 1s;
+}
+
+
+.nav-item:hover {
+  box-shadow: 0 0 30px violet;
+}
+
+
+@keyframes glow {
+  0% {color: #00ff7f52;}
+  50% {color: #00ff7f;}
+  100% {color: #00ff7f52;}
+}
+
+
+
+/* Picked Colors */
+
+h4 {
+  font-size: 2.5em;
+}
+
+.picked-color {
+  padding: 20px;
+  margin: 3px;
+}
+
+.picked-color.black {
+  color: ghostwhite;
+}
+
+
+
+
+/* Color Elements */
+
+h3 {
+  text-align: center;
+  font-size: 4em;
+}
+
+.color-click {
+  text-decoration: none;
+  color: black;
+}
+
+.color {
+  height: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color:hover {
+  color: ghostwhite;
+}
+
+
+
+/* Individual Colors */
+
+.aliceblue:hover {
+  background-color: aliceblue;
+  color: darkslategrey;
+}
+.antiquewhite:hover {
+  background-color: antiquewhite;
+  color: darkslategrey;
+}
+.aqua:hover {
+  background-color: aqua;
+}
+.aquamarine:hover {
+  background-color: aquamarine;
+}
+.azure:hover {
+  background-color: azure;
+  color: darkslategrey;
+}
+.beige:hover {
+  background-color: beige;
+  color: darkslategrey;
+}
+.bisque:hover {
+  background-color: bisque;
+}
+.black:hover {
+  background-color: black;
+}
+.blanchedalmond:hover {
+  background-color: blanchedalmond;
+}
+.blue:hover {
+  background-color: blue;
+}
+.blueviolet:hover {
+  background-color: blueviolet;
+}
+.brown:hover {
+  background-color: brown;
+}
+.burlywood:hover {
+  background-color: burlywood;
+}
+.cadetblue:hover {
+  background-color: cadetblue;
+}
+.chartreuse:hover {
+  background-color: chartreuse;
+}
+.chocolate:hover {
+  background-color: chocolate;
+}
+.coral:hover {
+  background-color: coral;
+}
+.cornflowerblue:hover {
+  background-color: cornflowerblue;
+}
+.cornsilk:hover {
+  background-color: cornsilk;
+  color: darkslategrey;
+}
+.crimson:hover {
+  background-color: crimson;
+}
+.cyan:hover {
+  background-color: cyan;
+}
+.darkblue:hover {
+  background-color: darkblue;
+}
+.darkcyan:hover {
+  background-color: darkcyan;
+}
+.darkgoldenrod:hover {
+  background-color: darkgoldenrod;
+}
+.darkgray:hover {
+  background-color: darkgray;
+}
+.darkgrey:hover {
+  background-color: darkgrey;
+}
+.darkgreen:hover {
+  background-color: darkgreen;
+}
+.darkkhaki:hover {
+  background-color: darkkhaki;
+}
+.darkmagenta:hover {
+  background-color: darkmagenta;
+}
+.darkolivegreen:hover {
+  background-color: darkolivegreen;
+}
+.darkorange:hover {
+  background-color: darkorange;
+}
+.darkorchid:hover {
+  background-color: darkorchid;
+}
+.darkred:hover {
+  background-color: darkred;
+}
+.darksalmon:hover {
+  background-color: darksalmon;
+}
+.darkseagreen:hover {
+  background-color: darkseagreen;
+}
+.darkslateblue:hover {
+  background-color: darkslateblue;
+  color: ghostwhite;
+}
+.darkslategray:hover {
+  background-color: darkslategray;
+  color: ghostwhite;
+}
+.darkslategrey:hover {
+  background-color: darkslategrey;
+  color: ghostwhite;
+}
+.darkturquoise:hover {
+  background-color: darkturquoise;
+}
+.darkviolet:hover {
+  background-color: darkviolet;
+}
+.deeppink:hover {
+  background-color: deeppink;
+}
+.deepskyblue:hover {
+  background-color: deepskyblue;
+}
+.dimgray:hover {
+  background-color: dimgray;
+}
+.dimgrey:hover {
+  background-color: dimgrey;
+}
+.dodgerblue:hover {
+  background-color: dodgerblue;
+}
+.firebrick:hover {
+  background-color: firebrick;
+}
+.floralwhite:hover {
+  background-color: floralwhite;
+  color: darkslategrey;
+}
+.forestgreen:hover {
+  background-color: forestgreen;
+}
+.fuchsia:hover {
+  background-color: fuchsia;
+}
+.gainsboro:hover {
+  background-color: gainsboro;
+}
+.ghostwhite:hover {
+  background-color: ghostwhite;
+  color: darkslategrey;
+}
+.gold:hover {
+  background-color: gold;
+}
+.goldenrod:hover {
+  background-color: goldenrod;
+}
+.gray:hover {
+  background-color: gray;
+}
+.grey:hover {
+  background-color: grey;
+}
+.green:hover {
+  background-color: green;
+}
+.greenyellow:hover {
+  background-color: greenyellow;
+}
+.honeydew:hover {
+  background-color: honeydew;
+  color: darkslategrey;
+}
+.hotpink:hover {
+  background-color: hotpink;
+}
+.indianred:hover {
+  background-color: indianred;
+}
+.indigo:hover {
+  background-color: indigo;
+}
+.ivory:hover {
+  background-color: ivory;
+  color: darkslategrey;
+}
+.khaki:hover {
+  background-color: khaki;
+}
+.lavender:hover {
+  background-color: lavender;
+}
+.lavenderblush:hover {
+  background-color: lavenderblush;
+  color: darkslategrey;
+}
+.lawngreen:hover {
+  background-color: lawngreen;
+}
+.lemonchiffon:hover {
+  background-color: lemonchiffon;
+  color: darkslategrey;
+}
+.lightblue:hover {
+  background-color: lightblue;
+}
+.lightcoral:hover {
+  background-color: lightcoral;
+}
+.lightcyan:hover {
+  background-color: lightcyan;
+  color: darkslategrey;
+}
+.lightgoldenrodyellow:hover {
+  background-color: lightgoldenrodyellow;
+  color: darkslategrey;
+}
+.lightgray:hover {
+  background-color: lightgray;
+}
+.lightgrey:hover {
+  background-color: lightgrey;
+}
+.lightgreen:hover {
+  background-color: lightgreen;
+}
+.lightpink:hover {
+  background-color: lightpink;
+}
+.lightsalmon:hover {
+  background-color: lightsalmon;
+}
+.lightseagreen:hover {
+  background-color: lightseagreen;
+}
+.lightskyblue:hover {
+  background-color: lightskyblue;
+}
+.lightslategray:hover {
+  background-color: lightslategray;
+}
+.lightslategrey:hover {
+  background-color: lightslategrey;
+}
+.lightsteelblue:hover {
+  background-color: lightsteelblue;
+}
+.lightyellow:hover {
+  background-color: lightyellow;
+  color: darkslategrey;
+}
+.lime:hover {
+  background-color: lime;
+}
+.limegreen:hover {
+  background-color: limegreen;
+}
+.linen:hover {
+  background-color: linen;
+  color: darkslategrey;
+}
+.magenta:hover {
+  background-color: magenta;
+}
+.maroon:hover {
+  background-color: maroon;
+}
+.mediumaquamarine:hover {
+  background-color: mediumaquamarine;
+}
+.mediumblue:hover {
+  background-color: mediumblue;
+}
+.mediumorchid:hover {
+  background-color: mediumorchid;
+}
+.mediumpurple:hover {
+  background-color: mediumpurple;
+}
+.mediumseagreen:hover {
+  background-color: mediumseagreen;
+}
+.mediumslateblue:hover {
+  background-color: mediumslateblue;
+}
+.mediumspringgreen:hover {
+  background-color: mediumspringgreen;
+}
+.mediumturquoise:hover {
+  background-color: mediumturquoise;
+}
+.mediumvioletred:hover {
+  background-color: mediumvioletred;
+}
+.midnightblue:hover {
+  background-color: midnightblue;
+}
+.mintcream:hover {
+  background-color: mintcream;
+  color: darkslategrey;
+}
+.mistyrose:hover {
+  background-color: mistyrose;
+  color: darkslategrey;
+}
+.moccasin:hover {
+  background-color: moccasin;
+}
+.navajowhite:hover {
+  background-color: navajowhite;
+}
+.navy:hover {
+  background-color: navy;
+}
+.oldlace:hover {
+  background-color: oldlace;
+  color: darkslategrey;
+}
+.olive:hover {
+  background-color: olive;
+}
+.olivedrab:hover {
+  background-color:olivedrab ;
+}
+.orange:hover {
+  background-color: orange;
+}
+.orangered:hover {
+  background-color: orangered;
+}
+.orchid:hover {
+  background-color: orchid;
+}
+.palegoldenrod:hover {
+  background-color: palegoldenrod;
+  color: darkslategrey;
+}
+.palegreen:hover {
+  background-color: palegreen;
+}
+.paleturquoise:hover {
+  background-color: paleturquoise;
+}
+.palevioletred:hover {
+  background-color: palevioletred;
+}
+.papayawhip:hover {
+  background-color: papayawhip;
+  color: darkslategrey;
+}
+.peachpuff:hover {
+  background-color: peachpuff;
+}
+.peru:hover {
+  background-color: peru;
+}
+.pink:hover {
+  background-color: pink;
+}
+.plum:hover {
+  background-color: plum;
+}
+.powderblue:hover {
+  background-color: powderblue;
+}
+.purple:hover {
+  background-color: purple;
+}
+.rebeccapurple:hover {
+  background-color: rebeccapurple;
+}
+.red:hover {
+  background-color: red;
+}
+.rosybrown:hover {
+  background-color: rosybrown;
+}
+.royalblue:hover {
+  background-color: royalblue;
+}
+.saddlebrown:hover {
+  background-color: saddlebrown;
+}
+.salmon:hover {
+  background-color: salmon;
+}
+.sandybrown:hover {
+  background-color: sandybrown;
+}
+.seagreen:hover {
+  background-color: seagreen;
+}
+.seashell:hover {
+  background-color: seashell;
+  color: darkslategrey;
+}
+.sienna:hover {
+  background-color: sienna;
+}
+.silver:hover {
+  background-color: silver;
+}
+.skyblue:hover {
+  background-color: skyblue;
+}
+.slateblue:hover {
+  background-color: slateblue;
+}
+.slategray:hover {
+  background-color: slategray;
+}
+.slategrey:hover {
+  background-color: slategrey;
+}
+.snow:hover {
+  background-color: snow;
+  color: darkslategrey;
+}
+.springgreen:hover {
+  background-color: springgreen;
+}
+.steelblue:hover {
+  background-color: steelblue;
+}
+.tan:hover {
+  background-color: tan;
+}
+.teal:hover {
+  background-color: teal;
+}
+.thistle:hover {
+  background-color: thistle;
+}
+.tomato:hover {
+  background-color: tomato;
+}
+.turquoise:hover {
+  background-color: turquoise;
+}
+.violet:hover {
+  background-color: violet;
+}
+.wheat:hover {
+  background-color: wheat;
+}
+.white:hover {
+  background-color: white;
+  color: darkslategrey;
+}
+.whitesmoke:hover {
+  background-color: whitesmoke;
+  color: darkslategrey;
+}
+.yellow:hover {
+  background-color: yellow;
+  color: darkslategrey;
+}
+.yellowgreen:hover {
+  background-color: yellowgreen;
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  #header {
+    padding-top: 35vh;
+  }
+
+  #first-header {
+    font-size: 2.4em;
+  }
+
+  #second-header {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  .color {
+    height: 4em;
+  }
+
+  .nav-item {
+    margin: 4px;
+    padding: 20px;
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  .scroll-button {
+    height: 1.5em;
+    width: 1.5em;
+  }
+
+  .picked-color {
+    padding: 5px 10px;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+}
